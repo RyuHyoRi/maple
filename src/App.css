@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MaplestoryOTFLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "MaplestoryOTFLight" !important;
+  font-weight: 300 !important;
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.main .content_box {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main h2 {
+  font-size: 26px;
+  font-family: "MaplestoryOTFBold";
+}
+.main .search_box .character_name_input {
+  width: 300px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+  margin-right: 15px;
+  font-family: "MaplestoryOTFLight";
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.main .search_box .search_button {
+  width: 70px;
+  height: 34px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  background-color: rgb(255, 149, 174);
+  color: white;
+  font-family: "MaplestoryOTFLight";
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.main .character_data_box {
+  margin-top: 20px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.main .character_data_box .character_image {
+  width: 130px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+.main .character_data_box .character_info_text_box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.main .character_data_box .character_info_text_box [class$=text_box] {
+  font-size: 17px;
+}
+.main .character_data_box .character_name_text_box {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main .character_data_box .character_name_text_box .character_name_text {
+  font-size: 17px;
+}
+.main .character_data_box .character_name_text_box .character_gender_icon {
+  font-size: 15px;
+  margin-left: 4px;
+}
+.main .character_data_box .character_name_text_box .character_gender_icon .female_icon {
+  color: #f36da0;
+}
+.main .character_data_box .character_name_text_box .character_gender_icon .male_icon {
+  color: #5abbec;
+}
+.main .rank_data_box {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+.main .rank_data_box [class$=rank_box] {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main .rank_data_box [class$=rank_box] [class$=rank_text_box] {
+  width: 100%;
+  border-right: 1px solid rgba(178, 178, 178, 0.49);
+  padding: 5px 20px;
+  margin: 10px 0;
+}
+.main .rank_data_box [class$=rank_box] [class$=rank_text_box] div {
+  font-size: 15px;
+}
+.main .rank_data_box [class$=rank_box] [class$=rank_text_box] div:last-child {
+  margin-top: 4px;
+  font-weight: bold;
+  font-size: 15.5px;
+}
+.main .rank_data_box [class$=rank_box] [class$=world_rank_text_box] {
+  border: 0;
+}
+.main .right_box {
+  margin-left: 20px;
+}
+.main .character_item_content_box {
+  display: flex;
+  margin: 0;
+  flex-flow: column nowrap;
+}
+.main .character_item_content_box .character_item_preset_index {
+  padding: 5px;
+  border-radius: 15px;
+  background-color: white;
+}
+.main .character_item_content_box .character_item_preset_index .character_item_preset_list {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  margin: 0;
+}
+.main .character_item_content_box .character_item_preset_index .character_item_preset_list li {
+  padding: 7px 8px;
+  margin: 0 3px;
+}
+.main .character_item_content_box .character_item_preset_index .character_item_preset_list li span {
+  padding: 4px 5px;
+}
+.main .character_item_content_box .character_item_preset_index .character_item_preset_list .selected span {
+  border-bottom: 2px solid rgb(255, 149, 174);
+}
+.main .character_item_content_box .character_item_data_box {
+  width: 1000px;
+  margin-top: 15px;
+  font-size: 12px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 3px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_top_box {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_top_box .character_item_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_top_box .character_data_item_info {
+  margin-left: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_top_box .character_data_item_info .character_item_equipment_part {
+  color: rgb(102, 106, 122);
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_top_box .character_data_item_info .character_item_name {
+  margin-top: 3px;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_top_box .character_data_item_info .character_item_starforce {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 14px;
+  padding: 0 4px;
+  line-height: 13.5px;
+  border-radius: 4px;
+  color: rgb(246, 167, 48);
+  background-color: rgb(255, 248, 232);
+  margin-top: 3px;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_top_box .character_data_item_info .character_item_starforce .starforce_icon {
+  font-size: 12px;
+  margin-right: 1px;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box {
+  border-top: 1px solid rgba(131, 131, 131, 0.15);
+  margin-top: 6px;
+  padding: 5px 5px 0 5px;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .legendary {
+  color: rgb(92, 184, 92);
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .unique {
+  color: rgb(224, 149, 0);
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .epic {
+  color: rgb(109, 98, 161);
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .rare {
+  color: rgb(83, 147, 202);
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .character_item_option div, .main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .character_item_additional_option div {
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .character_item_option div:first-child, .main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .character_item_additional_option div:first-child {
+  color: rgb(132, 137, 153);
+  font-weight: normal;
+  margin-right: 7px;
+}
+.main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .character_item_option, .main .character_item_content_box .character_item_data_box .character_item_data .character_item_data_bottom_box .character_item_additional_option {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/*# sourceMappingURL=App.css.map */
